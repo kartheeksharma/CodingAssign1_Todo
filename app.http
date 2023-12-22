@@ -1,0 +1,44 @@
+
+//1.List of all todos
+//scenario.1 -Status
+###
+GET http://localhost:3001/todos/?status=TO%20DO 
+###
+//scenario.2-Priority
+GET http://localhost:3001/todos/?priority=HIGH
+###
+//scenario.3-Priority and status 
+GET http://localhost:3001/todos/?priority=HIGH&status=IN%20PROGRESS
+###
+//scenario.4-search_q
+GET http://localhost:3001/todos/?search_q=Buy
+###
+//scenario.5-status and category
+GET http://localhost:3001/todos/?category=WORK&status=DONE
+###
+//scenario.6-category
+GET http://localhost:3001/todos/?category=HOME
+###
+//scenario.7-category and priority
+GET http://localhost:3001/todos/?category=LEARNING&priority=HIGH
+
+
+
+//2.Specific todo 
+###
+GET http://localhost:3001/todos/1/
+
+//3.List of todos with specific due date 
+###
+GET http://localhost:3001/agenda/?date=2021-12-12
+
+
+
+
+
+
+
+
+
+
+
